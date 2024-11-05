@@ -16,17 +16,11 @@ app.get("/", (req, res) => {
 
 // Connecting to a database and starting the server
 // Connect to MongoDB
-
-mongoose.connect("mongodb+srv://admin:1234@cluster0.taefg.mongodb.net/todo-listapp?retryWrites=true&w=majority&appName=Cluster0")
-.then(() => {
-    console.log("Connected to Database...!")
-    app.listen(3000, () => {
+    
+  app.listen(3000, () => {
       console.log(`server is running at http://localhost:3000`);
     });
-})
-.catch(() => {
-    console.log("Connection failed...!")
-})
+
  
 
 
