@@ -122,7 +122,8 @@ app.patch("/todos/:id", (req, res) => {
     res.status(500).json({error: "failed to update todo..."})
     console.log(error)
   })
-   
-
-  
 })
+
+// here's is the code implememting the CRUD operations using mongoose and express.
+// Step-1 : First we need to install the express and mongoose packages using npm 
+// Step:2 :  Create a new file called index.js and add the following code to it..
