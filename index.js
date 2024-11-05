@@ -111,3 +111,18 @@ app.put("/todos/:id", (req, res) => {
 
 // PATCH route to update a to-do item
 // app.patch(")
+app.patch("/todos/:id", (req, res) => {
+  const { id } = req.params;
+  const { title, description, completed } = req.body
+  Todo.findByIdAndUpdate
+  .then(() => {
+    res.json({message: "Todo updated successfully!"})
+  })
+  .catch((error) => {
+    res.status(500).json({error: "failed to update todo..."})
+    console.log(error)
+  })
+   
+
+  
+})
